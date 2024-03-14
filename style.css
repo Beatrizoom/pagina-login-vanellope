@@ -24,7 +24,6 @@ section {
     background: transparent;
     border: none;
     border-radius: 20px;
-    backdrop-filter: blur(15px) brightness(80%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +133,10 @@ button {
 @media screen and (max-width: 480px) {
     .form-box {
         width: 100%;
-        border-radius: 50px;
-    }
+        border-radius: 50px;}
+
     section { background: url("img/background.jpg") no-repeat; }
+
+    .form-box { backdrop-filter: blur(15px) brightness(80%);
+    width: 90%;}
 }
